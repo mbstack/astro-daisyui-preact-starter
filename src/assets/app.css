@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes:
+    light --default,
+    night --prefersdark,
+    dark;
+}
+
+@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
+@theme {
+  --font-sans: "Montserrat Variable", sans-serif;
+}

@@ -1,0 +1,27 @@
+---
+import astroLogo from "@/assets/astro.svg";
+---
+
+<div>
+  <div class="flex flex-col gap-3 min-h-screen items-center justify-center">
+    <img src={astroLogo.src} class="w-70" alt="" />
+    <div class="card w-96 bg-base-100 shadow-md">
+      <div class="card-body items-center text-center">
+        <h2 class="card-title text-4xl">Hello, world!</h2>
+        <p class="text-sm text-gray-500">
+          Astro, TailwindCss and DaisyUI are working.
+        </p>
+        <div class="card-actions">
+          <button class="btn btn-primary">Get started</button>
+        </div>
+      </div>
+      <div class="card-actions justify-center p-3">
+        created by <a
+          class="text-blue-600 underline font-bold"
+          target="_blank"
+          href="https://github.com/mbstack">@mbstack</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
